@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ft_hangout</string>
+    <string name="action_settings">Paramètre</string>
+    <string name="address">Adresse</string>
+    <string name="code">Digicode</string>
+    <string name="content_alert_new_contact">Toutes les entrées doivent faire plus de 1 charactère</string>
+    <string name="create_contact">Créer</string>
+    <string name="delete">Supprimer</string>
+    <string name="edit">Editer</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom de famille</string>
+    <string name="phone">Téléphone</string>
+    <string name="sms">sms</string>
+    <string name="title_activity_display_contact">Afficher le contact</string>
+    <string name="title_activity_edit_contact">Editer le contact</string>
+    <string name="title_activity_new_contact">Nouveau contact</string>
+    <string name="title_activity_settings">Paramètre</string>
+    <string name="title_alert_new_contact">Erreur dans un des champs</string>
+    <string name="send">Envoyer</string>
+    <string name="type_msg">Entrez votre message</string>
+    <string name="title_activity_display_sms">Afficher les sms</string>
+
+
+    <string-array name="colors">
+        <item>Défaut</item>
+        <item>Rouge</item>
+        <item>Bleu</item>
+        <item>Vert</item>
+        <item>Noir</item>
+    </string-array>
+
+</resources>
