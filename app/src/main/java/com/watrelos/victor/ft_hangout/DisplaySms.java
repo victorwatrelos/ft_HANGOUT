@@ -11,6 +11,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -19,7 +20,7 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DisplaySms extends AppCompatActivity {
+public class DisplaySms extends BaseActivity {
 
     private ListView listSms;
     private SmsViewCursorAdapter customAdapter;
@@ -29,6 +30,7 @@ public class DisplaySms extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("Create", "FDSFDSFDSF");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_sms);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

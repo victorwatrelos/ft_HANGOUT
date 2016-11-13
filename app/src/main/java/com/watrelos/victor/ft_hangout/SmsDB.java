@@ -81,6 +81,9 @@ public class SmsDB {
     }
 
     public boolean insertData(String content, String src, String dst, String date, Context context) {
+        Log.d("SMSDB", "Insert: " + content + "src: " + src + "dst: " + dst);
+        src = src.trim();
+        dst = dst.trim();
         SmsDBHelper helper = new SmsDBHelper(context);
         SQLiteDatabase db = helper.getWritableDatabase();
 

@@ -79,7 +79,7 @@ public class ContactDB {
         ContactDBHelper helper = new ContactDBHelper(context);
         SQLiteDatabase db = helper.getWritableDatabase();
 
-        phone = this.changePhoneNumber(phone);
+        phone = this.changePhoneNumber(phone.trim());
         ContentValues newValues = new ContentValues();
         newValues.put(ContactEntry.COLUMN_NAME_FIRSTNAME, firstname);
         newValues.put(ContactEntry.COLUMN_NAME_LASTNAME, lastname);
@@ -102,7 +102,7 @@ public class ContactDB {
         SQLiteDatabase db = helper.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        phone = this.changePhoneNumber(phone);
+        phone = this.changePhoneNumber(phone.trim());
         values.put(ContactEntry.COLUMN_NAME_ENTRY_ID, "2");
         values.put(ContactEntry.COLUMN_NAME_FIRSTNAME, firstname);
         values.put(ContactEntry.COLUMN_NAME_LASTNAME, lastname);

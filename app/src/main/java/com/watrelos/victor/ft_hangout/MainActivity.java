@@ -26,14 +26,13 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
     public static final String EXTRA_CONTACT_ID = "com.watrelos.victor.ft_hangout.ExtraContactId";
     private ContactDB contactDB;
     private ContactViewCursorAdapter customAdapter = null;
     private ListView listContactView;
-    private Date date;
 
     public void openSettings(MenuItem item) {
         Intent intent = new Intent(MainActivity.this, Settings.class);
@@ -84,18 +83,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onPause() {
-        super.onPause();
-        date = new Date();
-    }
-
-    @Override
     public void onResume() {
         super.onResume();
-        if (date != null) {
-            Toast toast = Toast.makeText(this, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date), Toast.LENGTH_SHORT);
-            toast.show();
-        }
         updateColor();
         if (customAdapter != null) {
             customAdapter = new ContactViewCursorAdapter(MainActivity.this, contactDB.getContactsCursor(MainActivity.this));

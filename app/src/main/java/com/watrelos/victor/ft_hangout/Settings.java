@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Settings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class Settings extends BaseActivity implements AdapterView.OnItemSelectedListener {
 
     private static final Integer[] color = {R.color.colorPrimaryDark, R.color.red, R.color.blue, R.color.green, R.color.black};
     public static final String      PREF_KEY = "MyPrefs";

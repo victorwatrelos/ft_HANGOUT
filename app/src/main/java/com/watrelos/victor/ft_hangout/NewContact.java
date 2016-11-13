@@ -18,7 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class NewContact extends AppCompatActivity {
+public class NewContact extends BaseActivity {
 
     protected boolean fname_valid = false;
     protected boolean lname_valid = false;

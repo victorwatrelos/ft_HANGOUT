@@ -33,6 +33,7 @@ public class SmsReceiver extends BroadcastReceiver {
 
         SmsDB smsDB = new SmsDB();
 
+        Log.d("TOTO", "SMS RECEIVED");
         Object[] pdus = (Object[]) bundle.get("pdus");
         SmsMessage message;
         String phoneNumber;

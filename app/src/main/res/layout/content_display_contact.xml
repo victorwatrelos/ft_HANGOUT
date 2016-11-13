@@ -15,7 +15,16 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.watrelos.victor.ft_hangout.DisplayContact"
     tools:showIn="@layout/activity_display_contact"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:text="  "
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_weight="0.64"
+        android:layout_height="45dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,6 +34,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:id="@+id/view_firstname"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import java.util.Map;
 
-public class DisplayContact extends AppCompatActivity {
+public class DisplayContact extends BaseActivity {
 
     private static final String TAG = "DisplayContact";
     public static final String FIRSTNAME = "firstname";
